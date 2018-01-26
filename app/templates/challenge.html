@@ -1,0 +1,10 @@
+<div ng-controller="MainController">
+  <ul>
+    <li ng-repeat="x in products">
+        {{x}}
+        <a href="#" ng-click="removeItem($index)">(x)</a>
+    </li>
+  </ul>
+  <input ng-model="addMe">
+  <button ng-click="addItem()">Add Note</button>
+</div>
